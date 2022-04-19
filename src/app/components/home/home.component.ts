@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subs.push(this.movie.getTrending().subscribe(data => {
       this.trending = data;
-      this.headerBGUrl = 'https://image.tmdb.org/t/p/original' + this.trending.results[3].backdrop_path;
+      this.headerBGUrl = 'https://image.tmdb.org/t/p/original' + this.trending.results[0].backdrop_path;
     }));
     this.subs.push(this.movie.getPopularMovies().subscribe(data => this.popular = data));
     this.subs.push(this.movie.getTopRated().subscribe(data => this.topRated = data));

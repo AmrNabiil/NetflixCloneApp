@@ -5,15 +5,15 @@
          [ngStyle]="{
       'background-image' : 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('+headerBGUrl+')'
       }">
-      <h2>{{trending?.results[3].title}}</h2>
+      <h2>{{trending?.results[0].title}}</h2>
       <div class="header__buttons">
 
-        <button class="play-button" (click)="openMovieDetails(trending?.results[3], 'playNow')">
+        <button class="play-button" (click)="openMovieDetails(trending?.results[0], 'playNow')">
           <mat-icon>arrow_right</mat-icon>
           <span>Play</span>
         </button>
 
-        <button class="more-button" (click)="openMovieDetails(trending?.results[3], '')">
+        <button class="more-button" (click)="openMovieDetails(trending?.results[0], '')">
           <mat-icon>info</mat-icon>
           <span>More Info</span>
         </button>
