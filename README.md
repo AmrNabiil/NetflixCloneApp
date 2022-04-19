@@ -22,4 +22,10 @@ Users can surf the movie lists in the home page or filter them according to genr
 
 Images from the system:
 
+![Netflix option](https://user-images.githubusercontent.com/97969023/163901726-04b630d7-8f33-4cbf-8b29-942bc51f89a6.png)
+![Netflix 2-2](https://user-images.githubusercontent.com/97969023/163901768-e34d6337-c8a7-4ef6-8dee-595489c96d27.png)
+![Netflix 1-2](https://user-images.githubusercontent.com/97969023/163901750-7e9fe1dc-55bb-46e8-92d9-becdb3851f41.png)
 
+![Netflix 3](https://user-images.githubusercontent.com/97969023/163901792-55f3ecc5-c3ff-4d67-a509-fdea66b076d6.png)
+![Netlfix 4](https://user-images.githubusercontent.com/97969023/163901642-d09b8564-adee-4665-a6fd-0bd6fafbfb62.png)
+![MoreLikeThat](https://user-images.githubusercontent.com/97969023/163901663-3ba00dbb-7f22-43f8-87e2-dc525562cb6c.png)
