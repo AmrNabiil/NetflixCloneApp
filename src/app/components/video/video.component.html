@@ -1,0 +1,213 @@
+<section
+  class="nmtitle-section section-additional-videos"
+  id="section-additional-videos"
+  data-uia="section-additional-videos"
+>
+  <div class="section-header" data-uia="section-header">
+    <h2 id="playNow"class="section-header-text section-item" data-uia="section-header-text">
+      Videos
+    </h2>
+    <h2
+      class="section-subheader-text section-item"
+      data-uia="section-subheader-text"
+    >
+      Trailers & Snippets
+    </h2>
+  </div>
+  <div class="nm-content-horizontal-row" aria-hidden="false">
+    <ul class="nm-content-horizontal-row-item-container">
+      <li
+        class="nm-content-horizontal-row-item"
+        data-uia="collections-row-item"
+      >
+        <div
+          class="additional-video-wrapper"
+          data-uia="additional-video-wrapper"
+        >
+          <button class="additional-video">
+            <span
+              class="additional-video-image-wrapper"
+              style="
+                background-image: url(assets/netflix.svg);
+              "
+              >
+              <!-- <img
+              src="https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZXBBevmndWlyvbkIc3136oiziVbpEcpkEE9_MFL9CyIArgvBYbqHP6kWYZIzGyu6y-IgwePypXSkqp2FyofY37QzB8d5rLPMz5Jj_a9e6C4U9bc.jpg?r=e06"
+              alt=""
+              role="presentation"
+              class="additional-video-image-preloader"
+              loading="lazy" /> -->
+
+              <!-- <iframe width="800" height="506" src="https://www.youtube.com/embed/DaavRAV8a0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <!-- <h1>https://youtube.com/embed/{{videos.results[0].key}}</h1> -->
+              <!-- <h1>{{vidsrc0}}</h1> -->
+              <iframe *ngIf="vidsrc0 != null" width="620" height="350" src={{vidsrc1}} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe *ngIf="vidsrc0 == null" width="620" height="350" src="https://youtube.com/embed/ZTI6T5M8Fj0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <svg
+                viewBox="0 0 50 50"
+                class="additional-video-play-icon"
+                data-uia="additional-video-play-icon"
+              >
+                <g fill="none" fill-rule="nonzero">
+                  <path
+                    fill="#fff"
+                    d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25z"
+                    class="base"
+                  ></path>
+                  <path
+                    fill="#000"
+                    d="M35.3 25l-15.6-8.6v17.2z"
+                    class="triangle"
+                  ></path>
+                </g></svg></span
+            >
+          </button>
+        </div>
+      </li>
+      <li
+        class="nm-content-horizontal-row-item"
+        data-uia="collections-row-item"
+      >
+        <div
+          class="additional-video-wrapper"
+          data-uia="additional-video-wrapper"
+        >
+          <button class="additional-video">
+            <span
+              class="additional-video-image-wrapper"
+              style="
+                background-image: url(assets/netflix.svg);
+              "
+              >
+              <!-- <img
+                src="https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZFvijgzUk7UDKpJzpJukjKP4dfUfy4keNxOXJuNIp6U07P-PJ9gammPgJlgEYEtzSms8CTMcKfQznjN9U8w0J0ObSgcmvY8jzeNLl8UKCHm1w0X.jpg?r=0fa"
+                alt=""
+                role="presentation"
+                class="additional-video-image-preloader"
+                loading="lazy" /> -->
+                <iframe *ngIf="vidsrc1 != null" width="620" height="350" src={{vidsrc1}} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe *ngIf="vidsrc1 == null" width="620" height="350" src="https://youtube.com/embed/3Pt-m0750Rc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <svg
+                viewBox="0 0 50 50"
+                class="additional-video-play-icon"
+                data-uia="additional-video-play-icon"
+              >
+
+                <g fill="none" fill-rule="nonzero">
+                  <path
+                    fill="#fff"
+                    d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25z"
+                    class="base"
+                  ></path>
+                  <path
+                    fill="#000"
+                    d="M35.3 25l-15.6-8.6v17.2z"
+                    class="triangle"
+                  ></path>
+                </g></svg></span
+            >
+          </button>
+        </div>
+      </li>
+      <!-- <li
+        class="nm-content-horizontal-row-item"
+        data-uia="collections-row-item"
+      >
+        <div
+          class="additional-video-wrapper"
+          data-uia="additional-video-wrapper"
+        >
+          <button class="additional-video">
+            <span
+              class="additional-video-image-wrapper"
+              style="
+                background-image: url(https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSZeWKOiTriZSXFXcX1CyY9b7L8a-nOHRHGq4TOwQiwEKT1u8--OGvbLOwnO1zpP7aV8oWc2s3AHexJKQZ26AL14gb9jdEts9mEaDgsF8uvsF5bo.jpg?r=aeb);
+              "
+              ><img
+                src="https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSZeWKOiTriZSXFXcX1CyY9b7L8a-nOHRHGq4TOwQiwEKT1u8--OGvbLOwnO1zpP7aV8oWc2s3AHexJKQZ26AL14gb9jdEts9mEaDgsF8uvsF5bo.jpg?r=aeb"
+                alt=""
+                role="presentation"
+                class="additional-video-image-preloader"
+                loading="lazy" /><svg
+                viewBox="0 0 50 50"
+                class="additional-video-play-icon"
+                data-uia="additional-video-play-icon"
+              >
+                <g fill="none" fill-rule="nonzero">
+                  <path
+                    fill="#fff"
+                    d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25z"
+                    class="base"
+                  ></path>
+                  <path
+                    fill="#000"
+                    d="M35.3 25l-15.6-8.6v17.2z"
+                    class="triangle"
+                  ></path>
+                </g></svg></span
+            ><span
+              class="additional-video-title"
+              data-uia="additional-video-title"
+              >Trailer 2: The Adam Project</span
+            >
+          </button>
+        </div>
+      </li>
+      <li
+        class="nm-content-horizontal-row-item"
+        data-uia="collections-row-item"
+      >
+        <div
+          class="additional-video-wrapper"
+          data-uia="additional-video-wrapper"
+        >
+          <button class="additional-video">
+            <span
+              class="additional-video-image-wrapper"
+              style="
+                background-image: url(https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQ2R567xKZVUH0m9_7NwaugoC9tgShEmfHlAT2YEXY07u82SSRxcK5qPNliaoq1MyAh66i40iZbpxwaNUObV6yyjip-tluJOhmnFvh7LLKKNrIiO.jpg?r=278);
+              "
+              ><img
+                src="https://occ-0-56-55.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQ2R567xKZVUH0m9_7NwaugoC9tgShEmfHlAT2YEXY07u82SSRxcK5qPNliaoq1MyAh66i40iZbpxwaNUObV6yyjip-tluJOhmnFvh7LLKKNrIiO.jpg?r=278"
+                alt=""
+                role="presentation"
+                class="additional-video-image-preloader"
+                loading="lazy" /><svg
+                viewBox="0 0 50 50"
+                class="additional-video-play-icon"
+                data-uia="additional-video-play-icon"
+              >
+                <g fill="none" fill-rule="nonzero">
+                  <path
+                    fill="#fff"
+                    d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25z"
+                    class="base"
+                  ></path>
+                  <path
+                    fill="#000"
+                    d="M35.3 25l-15.6-8.6v17.2z"
+                    class="triangle"
+                  ></path>
+                </g></svg></span
+            ><span
+              class="additional-video-title"
+              data-uia="additional-video-title"
+              >Teaser: The Adam Project</span
+            >
+          </button>
+        </div>
+      </li> -->
+    </ul>
+    <!-- <button class="nm-content-horizontal-row-nav next" aria-label="Next">
+      <span class="nm-content-horizontal-row-nav-icon"
+        ><span class="nf-svg-icon"
+          ><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="currentColor"
+              d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z"
+            ></path></svg></span></span
+      ><span class="nm-content-horizontal-row-gradient"></span>
+    </button> -->
+  </div>
+</section>

@@ -1,0 +1,109 @@
+<app-header-main></app-header-main>
+
+<section
+  class="nmtitle-section section-hero"
+  id="section-hero"
+  data-uia="section-hero"
+>
+  <div class="hero-container" data-uia="hero-container">
+    <div class="info-container">
+      <div class="details-container">
+        <div class="title-info" data-uia="title-info">
+          <h1 class="title-title" data-uia="title-info-title">
+            {{movie.title}}
+          </h1>
+          <div
+            class="title-info-metadata-wrapper"
+            data-uia="title-info-metadata-wrapper"
+          >
+            <span
+              class="title-info-metadata-item item-year"
+              data-uia="item-year"
+              >{{movie.release_date}}</span
+            ><span role="presentation" class="info-spacer"> | </span
+            ><span
+              class="title-info-metadata-item item-maturity"
+              data-uia="item-maturity"
+              ><span class="maturity-rating"
+                ><span class="maturity-number">{{movie.vote_average}}&#x2605; </span></span
+              ></span
+            ><span role="presentation" class="info-spacer"> | </span
+            ><span
+              class="title-info-metadata-item item-runtime"
+              data-uia="item-runtime"
+              ><span class="duration">{{movie.runtime}} Minutes</span></span
+            ><span role="presentation" class="info-spacer"> | </span
+            >
+            <!-- <a > -->
+              <div
+              class="title-info-metadata-item item-genre"
+              href="https://www.netflix.com/eg-en/browse/genre/1365"
+              data-uia="item-genre"
+              >
+              {{movie.genres[0].name}} &amp; {{movie.genres[1]?.name}}
+              </div>
+              <!-- </a> -->
+          </div>
+          <div
+            class="title-info-synopsis-talent"
+            data-uia="title-info-synopsis-talent"
+          >
+            <div class="title-info-synopsis" data-uia="title-info-synopsis">
+              {{movie.overview}}
+            </div>
+            <div class="title-info-talent">
+              <div class="title-data-info-item item-starring">
+                <span class="title-data-info-item-label">Starring:</span
+                ><span
+                  class="title-data-info-item-list"
+                  data-uia="info-starring"
+                  >
+                  {{credits.cast[0]?.original_name}}, {{credits.cast[1]?.name}}, {{credits.cast[1]?.name}}
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <div
+        class="hero-image hero-image-desktop"
+        style="
+          display: none;
+          background-image: url('https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}');
+        "
+      ></div>
+      <div
+        class="hero-image hero-image-mobile"
+        style="
+          display: none;
+          background-image: url('https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}');
+        "
+      ></div>
+      <picture class="hero-image-loader" data-uia="title-logo"
+        ><source
+          media="(max-width: 599px)"
+          srcset="
+          https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}          " />
+        <source
+          media="(min-width: 600px)"
+          srcset="
+          https://image.tmdb.org/t/p/original/{{movie.backdrop_path}}          " />
+        <img src="" alt="" aria-hidden="true"
+      /></picture>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Video section trials starts here -->
+
+
+
+<app-video [videos]="videos"></app-video>
+<app-slider title="More Like This" [movies]="similar" [sliderConfig]="sliderConfig"></app-slider>
+
+<app-slider title="Other Movies You Might Like" [movies]="popular" [sliderConfig]="sliderConfig"></app-slider>
+
